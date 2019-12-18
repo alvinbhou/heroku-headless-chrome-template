@@ -1,5 +1,5 @@
 from selenium import webdriver
-import os
+import os, time
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
@@ -10,4 +10,9 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 # Now you can start using Selenium
 driver.get('https://www.google.com/')
-assert "Google" in driver.title
+print(driver.title)
+
+while True:
+    time.sleep(10)
+    # keep alive 
+    pass
