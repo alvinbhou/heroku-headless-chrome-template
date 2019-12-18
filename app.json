@@ -4,6 +4,16 @@
     "repository": "https://github.com/CryoliteZ/heroku-headless-chrome-template",
     "logo": "https://i.imgur.com/iXnGKRa.png",
     "keywords": ["Chrome", "Heroku", "Headless", "Selenium"],
+    "env": {
+        "CHROMEDRIVER_PATH": {
+            "description": "Chrome driver path",
+            "value": "/app/.chromedriver/bin/chromedriver"
+        },
+        "GOOGLE_CHROME_BIN": {
+            "description": "Chrome path",
+            "value": "/app/.apt/usr/bin/google-chrome"
+        }
+    },
     "buildpacks": [{
             "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
         },
