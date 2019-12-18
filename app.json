@@ -1,0 +1,7 @@
+{
+    "name": "Deploy a headless Chrome application to Heroku",
+    "description": "A headless Chrome app that runs on Heroku",
+    "repository": "https://github.com/CryoliteZ/heroku-headless-chrome-template",
+    "logo": "https://i.imgur.com/iXnGKRa.png",
+    "keywords": ["Chrome", "Heroku", "Headless", "Selenium"]
+}
