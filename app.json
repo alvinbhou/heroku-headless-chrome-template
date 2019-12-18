@@ -3,5 +3,15 @@
     "description": "A headless Chrome app that runs on Heroku",
     "repository": "https://github.com/CryoliteZ/heroku-headless-chrome-template",
     "logo": "https://i.imgur.com/iXnGKRa.png",
-    "keywords": ["Chrome", "Heroku", "Headless", "Selenium"]
+    "keywords": ["Chrome", "Heroku", "Headless", "Selenium"],
+    "buildpacks": [{
+            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-python"
+        }
+    ]
 }
