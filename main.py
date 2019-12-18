@@ -8,11 +8,10 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
-# Now you can start using Selenium
+# Test usage of selenium
 driver.get('https://www.google.com/')
 print(driver.title)
 
+# Keep alive 
 while True:
     time.sleep(10)
-    # keep alive 
-    pass
